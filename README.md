@@ -1,27 +1,30 @@
-NovaTech Consulting — FP&A Financial Model (2022–2025)
-A complete FP&A portfolio project demonstrating variance analysis, YoY revenue bridge, business drivers, EBITDA analysis, and executive‑level storytelling.
+📘 NovaTech Consulting — FP&A Financial Model (2022–2025)
+A complete FP&A portfolio project demonstrating variance analysis, YoY revenue bridge, business drivers, forecasting engine, scenario modeling, and executive‑level storytelling.
 
 📊 Overview
-This repository contains a full FP&A financial model built for a consulting business (NovaTech Consulting Lda.).
-It includes:
+Este repositório contém um modelo FP&A completo para uma consultora fictícia (NovaTech Consulting Lda.), cobrindo:
 
-Raw historical data (2022–2024)
+Dados históricos mensais (2022–2024)
 
 Budget 2025
 
-YoY Revenue Bridge (2022→2023, 2023→2024)
+YoY Revenue Bridge (2022→2023 e 2023→2024)
 
-Business Driver Sheet (Headcount, Billing Rate, MS recurring revenue)
+Drivers de negócio (HC, Billing Rate, MS, Cost per Head)
 
 Variance Analysis (Actual 2024 vs Budget 2025)
 
-EBITDA and Margin analysis
+Estrutura de P&L
 
-P&L structure for forecasting
+Forecast engine (Flat, Trend, Manual)
 
-CFO Summary & Full Narrative
+Scenario Analysis (Base, Upside, Downside)
 
-This project is designed as a realistic FP&A case study and a portfolio piece for job applications.
+Sensitivity Tables (HC, Rate, Utilização)
+
+Narrativa FP&A e CFO Summary
+
+Este projeto funciona como um case study FP&A completo, ideal para portfolio profissional.
 
 🧩 Repository Structure
 Código
@@ -31,68 +34,87 @@ novatech-fpa-variance-model/
 │   └── RawData.xlsx
 │
 ├── Analysis/
-│   ├── Variance_Model.xlsx
 │   ├── YoY_Bridge.xlsx
-│   └── Drivers.xlsx
+│   ├── Drivers.xlsx
+│   ├── Variance_Model.xlsx
+│   └── Forecast_2025.xlsx
 │
 ├── Docs/
 │   ├── CFO_Summary.pdf
-│   └── Full_Narrative.pdf
+│   └── Full_FP&A_Narrative.pdf
 │
 └── README.md
 📈 Key Analytical Components
-1. YoY Revenue Bridge (2022→2023, 2023→2024)
-A full decomposition of revenue growth into:
+1. RawData (2022–2024 + Budget 2025)
+Inclui:
 
-Volume effect (change in headcount × prior-year rate × 12)
+Revenue (Consulting + MS)
 
-Rate effect (same headcount × change in billing rate × 12)
+Costs (Personnel, Operations, Other)
 
-Mix effect (Consulting vs Managed Services)
+Budget 2025 por linha
 
-Opening → Closing reconciliation
+Sazonalidade realista
 
-This explains why revenue changed, not just how much.
+Ajustes de rounding em Dezembro
 
-2. Business Drivers (Input Sheet)
-Core operational assumptions:
+2. YoY Revenue Bridge (Atualizado)
+2022 → 2023
+Volume: +€240,000
 
-Monthly Headcount (FTE)
+Rate: +€169,200
 
-Monthly Billing Rate (€ per head per month)
+Mix: €0
 
-Managed Services recurring revenue
+Actual: €2,509,200
 
-Derived Cost per Head
+Bridge: €2,400,000
 
-Seasonality assumptions
+2023 → 2024
+Volume: +€258,000
 
-Financial assumptions (D&A, tax, cost ratios)
+Rate: +€187,200
 
-This sheet allows scenario modelling by adjusting yellow input cells.
+Mix: €0
 
-3. Variance Analysis (Actual 2024 vs Budget 2025)
-Full variance engine:
+Actual: €2,650,000
 
-Revenue variance (Consulting + MS)
+Bridge: €2,845,200
 
-Cost variance (Personnel, Operations, Other)
+Conclusão:  
+Crescimento explicado por mais FTEs + maior rate, MS estável.
 
-EBITDA variance
+3. Business Drivers (Atualizado)
+Headcount: 42 → 47 → 52 → 55 (2025)
 
-Margin variance
+Billing Rate: €4,000 → €4,300 → €4,600 → €4,900 (2025)
 
-Monthly and total variance %
+Managed Services: €35k → €40k → €44.2k → €580k/ano (budget 2025)
 
-Commentary for each line
+Cost Structure:
 
-Key insight:
+Personnel: 65%
 
-The negative variance is volume‑driven.
-Costs adjusted proportionally, but revenue shortfall compressed margins.
+Operations: 8%
 
-4. P&L Structure (Forecast‑ready)
-Includes:
+Other: 4%
+
+Drivers alimentam todo o modelo (P&L, Forecast, Cenários).
+
+4. Variance Analysis — Actual 2024 vs Budget 2025
+Revenue: -8.6%
+
+Costs: -8.6%
+
+EBITDA: abaixo do budget
+
+Margem: comprimida por falta de volume
+
+Insight:  
+A empresa foi eficiente, mas operou com volume insuficiente.
+
+5. P&L Structure
+Inclui:
 
 Revenue
 
@@ -102,9 +124,7 @@ Gross Profit
 
 EBITDA
 
-EBITDA Margin
-
-D&A (2% of revenue)
+D&A (2%)
 
 EBIT
 
@@ -112,69 +132,53 @@ Tax (21%)
 
 Net Income
 
-This structure is ready for Week 4 forecasting.
+6. Forecast Engine (Flat, Trend, Manual)
+Flat: média de Oct–Dec 2024
 
-🧠 Key Insights from the Model
-Revenue
-Revenue underperformed budget by 8.6%
+Trend: regressão linear
 
-Consulting and MS show identical % variance → pure volume effect
+Manual: HC × Rate × Utilização
 
-Consulting: fewer billable hours / lower productive capacity
+Todos alimentam automaticamente o P&L 2025.
 
-MS: renewals below expectations or churn
+7. Scenario Analysis (Base, Upside, Downside)
+Scenario	HC	Rate	Utilização	Insight
+Base	55	€4,900	82%	Continuação da tendência
+Upside	60	€5,000	86%	Crescimento agressivo
+Downside	50	€4,700	78%	Pressão comercial
 
-Costs
-Costs also 8.6% below budget
 
-Personnel costs reflect lower headcount/activity
+8. Sensitivity Tables
+Três tabelas:
 
-Operations scaled proportionally
+EBITDA vs Headcount
 
-Other costs slightly less proportional due to fixed components
+EBITDA vs Billing Rate
 
-EBITDA
-EBITDA underperformance is top‑line driven
+EBITDA vs Utilização
 
-Cost structure remained efficient
+Confirma que EBITDA é mais sensível a HC e Utilização do que ao Rate.
 
-Margin compression due to insufficient revenue to absorb fixed costs
+🧠 Key Insights
+Crescimento histórico explicado por HC + Rate
+
+MS é estável e previsível
+
+Custos proporcionais ao revenue
+
+Variância negativa do Budget 2025 é volume-driven
+
+Forecast engine permite planeamento trimestral
+
+Cenários e sensitividades suportam decisões estratégicas
 
 📄 Included Documents
 CFO Summary (PDF)
-A one‑page executive summary highlighting performance drivers and management implications.
+Resumo executivo com principais drivers e implicações.
 
 Full FP&A Narrative (PDF)
-A detailed analysis covering revenue, costs, EBITDA, margin, YoY bridge, and business drivers.
-
-🧠 Skills Demonstrated
-FP&A Skills
-Variance analysis
-
-YoY bridge modelling
-
-Revenue/cost driver analysis
-
-EBITDA and margin interpretation
-
-P&L structuring
-
-Executive storytelling
-
-Scenario modelling
-
-Technical Skills
-Excel modelling
-
-Data structuring
-
-Git/GitHub version control
-
-Professional documentation
+Análise completa: RawData, YoY Bridge, Drivers, Variance, P&L, Forecast, Cenários.
 
 👩‍💼 About the Author
 Daniela Marques  
 FP&A Analyst | Financial Modelling | Business Performance | Data‑Driven Storytelling
-
-🔗 Connect
-If you’d like feedback on this project or want to discuss FP&A modelling, feel free to reach out on LinkedIn.
