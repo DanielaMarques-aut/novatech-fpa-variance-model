@@ -1,4 +1,4 @@
-📘 NovaTech Consulting — FP&A Financial Model (2022–2025)
+NovaTech Consulting — FP&A Financial Model (2022–2025)
 A complete FP&A portfolio project demonstrating variance analysis, YoY revenue bridge, business drivers, forecasting engine, scenario modeling, and executive‑level storytelling.
 
 📊 Overview
@@ -14,9 +14,9 @@ Drivers de negócio (HC, Billing Rate, MS, Cost per Head)
 
 Variance Analysis (Actual 2024 vs Budget 2025)
 
-Estrutura de P&L
+Forecast Engine (Flat, Trend, Manual)
 
-Forecast engine (Flat, Trend, Manual)
+Forecast vs Budget 2025
 
 Scenario Analysis (Base, Upside, Downside)
 
@@ -70,6 +70,8 @@ Actual: €2,509,200
 
 Bridge: €2,400,000
 
+Gap: €−109,200
+
 2023 → 2024
 Volume: +€258,000
 
@@ -81,6 +83,8 @@ Actual: €2,650,000
 
 Bridge: €2,845,200
 
+Gap: €−195,800
+
 Conclusão:  
 Crescimento explicado por mais FTEs + maior rate, MS estável.
 
@@ -89,7 +93,7 @@ Headcount: 42 → 47 → 52 → 55 (2025)
 
 Billing Rate: €4,000 → €4,300 → €4,600 → €4,900 (2025)
 
-Managed Services: €35k → €40k → €44.2k → €580k/ano (budget 2025)
+Managed Services: €420k → €480k → €530k → €580k (budget 2025, +9.4%)
 
 Cost Structure:
 
@@ -113,26 +117,7 @@ Margem: comprimida por falta de volume
 Insight:  
 A empresa foi eficiente, mas operou com volume insuficiente.
 
-5. P&L Structure
-Inclui:
-
-Revenue
-
-Costs
-
-Gross Profit
-
-EBITDA
-
-D&A (2%)
-
-EBIT
-
-Tax (21%)
-
-Net Income
-
-6. Forecast Engine (Flat, Trend, Manual)
+5. Forecast Engine (Flat, Trend, Manual)
 Flat: média de Oct–Dec 2024
 
 Trend: regressão linear
@@ -140,6 +125,37 @@ Trend: regressão linear
 Manual: HC × Rate × Utilização
 
 Todos alimentam automaticamente o P&L 2025.
+
+6. Forecast 2025 vs Budget 2025 (Atualizado)
+Revenue
+Forecast acima do budget por €383K
+
+Driver: utilização mais realista (82% vs 71.7% no budget)
+
+Personnel
+Forecast abaixo do budget por €63K
+
+Driver: custo/head real (€2,760) < custo/head budget (€2,856)
+
+Operations & Other
+Forecast acima do budget por €46K
+
+Driver: revenue mais alto → custos variáveis mais altos
+
+Total Costs
+Forecast abaixo do budget por €87K
+
+Driver: poupança em Personnel > aumento em Ops+Other
+
+EBITDA
+Forecast acima do budget por €400K
+
+Driver: operating leverage + utilização mais alta
+
+EBITDA Margin
+Forecast margin > budget margin
+
+Driver: Personnel semi-fixo → cada ponto de utilização cai quase todo em EBITDA
 
 7. Scenario Analysis (Base, Upside, Downside)
 Scenario	HC	Rate	Utilização	Insight
@@ -162,15 +178,15 @@ Confirma que EBITDA é mais sensível a HC e Utilização do que ao Rate.
 🧠 Key Insights
 Crescimento histórico explicado por HC + Rate
 
-MS é estável e previsível
+MS é estável, mas Budget 2025 assume +9.4%
 
 Custos proporcionais ao revenue
 
 Variância negativa do Budget 2025 é volume-driven
 
-Forecast engine permite planeamento trimestral
+Forecast 2025 depende fortemente da utilização
 
-Cenários e sensitividades suportam decisões estratégicas
+Cenários e sensitivities suportam decisões estratégicas
 
 📄 Included Documents
 CFO Summary (PDF)
