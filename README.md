@@ -38,6 +38,9 @@ novatech-fpa-variance-model/
 │   ├── Drivers.xlsx
 │   ├── Variance_Model.xlsx
 │   └── Forecast_2025.xlsx
+    └── Powerbi analysis
+
+
 │
 ├── Docs/
 │   ├── CFO_Summary.pdf
@@ -191,9 +194,25 @@ Cenários e sensitivities suportam decisões estratégicas
 📄 Included Documents
 CFO Summary (PDF)
 Resumo executivo com principais drivers e implicações.
-
 Full FP&A Narrative (PDF)
 Análise completa: RawData, YoY Bridge, Drivers, Variance, P&L, Forecast, Cenários.
+Powerbi dashboard: KPI cards, Budget vs Actual, Revenue trend
+
+# NovaTech FP&A Model
+
+Financial planning & analysis practice model built on a fictional 
+IT consultancy (NovaTech Consulting Lda., Lisboa).
+
+## What's included
+- Excel model: P&L, Variance Analysis, Drivers, Forecast (3 methods, 
+  3 scenarios, sensitivity tables), YoY Bridge
+- Power BI dashboard: KPI cards, Budget vs Actual, Revenue trend
+
+## Tools
+Excel | Power BI | DAX | Python (data generation)
+
+## Dataset
+Fictional — NovaTech Consulting Lda., ~52 FTEs, €2.65M revenue (2024)
 
 👩‍💼 About the Author
 Daniela Marques  
